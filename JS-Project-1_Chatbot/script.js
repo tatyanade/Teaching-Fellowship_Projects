@@ -1,5 +1,5 @@
 function errorMessage(){
-    alert("You did not type a valid response, please refresh your page to restart.")
+    alert("You did not type a valid response. Please press 'Embark' to continue, or refresh your page to restart.")
 }
 
 function note(num){
@@ -28,6 +28,7 @@ let hasBeenToHaberdashery = false;
 let hasCloak = false;
 let hasComeBackToCastle = false;
 let hasBeenToCastleMoat = false;
+
 //Landervillours
 function startGame(){
     let choice = prompt("Welcome to the town of Vouderlais - a medieval town that primarily focuses on agriculture. The rats who live here spend their time cultivating several types of cheese that are well known throughout the realm. There are also several high-quality bushes with fine and lovely berries. most of the farms are on the outskirts of town, becoming smaller as they near the town square. In the center of town, there are many merchants selling trinkets and knickknacks, as well as shops and warehouses and workshops. Down a ways is the castle, where the mouse Bobouse is supposed to live, however as ou have never been to Vouderlais before, you cannot confirm any of these facts. \n \n \n You are currently in the town square. What do you with to do? \n \n 1. Look around the town square \n 2. Check out the farms \n 3. Go to the castle" + note(3))
@@ -323,5 +324,5 @@ function atCastleHall(){
     }
 }
 
-startGame()
+// startGame()
 

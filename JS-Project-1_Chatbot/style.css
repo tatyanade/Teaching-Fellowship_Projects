@@ -1,5 +1,38 @@
+@font-face {
+    font-family: "Haversham";
+    src: url("assets/Haversham.ttf");
+}
+
 body{
-    background-image: url('stones.jpg');;
+    background-image: url('assets/stones.jpg');;
     background-repeat: repeat;
-    /* background-color: grey; */
+    background-color: rgb(114, 131, 114);
+}
+
+button{
+    margin-left: 50%;
+    margin-top: 7%;
+    text-align: center;
+    font-family: Haversham;
+    padding: 10px;
+    font-size: 20px;
+
+}
+
+h1{
+    text-align: center;
+    padding-top: 130px;
+    font-family: Haversham;
+    font-size: 70px;
+    color: white;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+
+}
+
+h2{
+    padding-top: 25px;
+    text-align: center;
+    font-family: Haversham;
+    text-shadow: -1px -1px 0 #FFF, 1px -1px 0 #FFF, -1px 1px 0 #FFF, 1px 1px 0 #FFF;
+
 }
