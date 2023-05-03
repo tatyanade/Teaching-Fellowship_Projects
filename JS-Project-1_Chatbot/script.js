@@ -31,7 +31,7 @@ let hasBeenToCastleMoat = false;
 
 //Landervillours
 function startGame(){
-    let choice = prompt("Welcome to the town of Vouderlais - a medieval town that primarily focuses on agriculture. The rats who live here spend their time cultivating several types of cheese that are well known throughout the realm. There are also several high-quality bushes with fine and lovely berries. most of the farms are on the outskirts of town, becoming smaller as they near the town square. In the center of town, there are many merchants selling trinkets and knickknacks, as well as shops and warehouses and workshops. Down a ways is the castle, where the mouse Bobouse is supposed to live, however as ou have never been to Vouderlais before, you cannot confirm any of these facts. \n \n \n You are currently in the town square. What do you with to do? \n \n 1. Look around the town square \n 2. Check out the farms \n 3. Go to the castle" + note(3))
+    let choice = prompt("Welcome to the town of Vouderlais - a medieval town that primarily focuses on agriculture. The rats who live here spend their time cultivating several types of cheese that are well-known throughout the realm. \nThere are also several high-quality bushes with fine and lovely berries. most of the farms are on the outskirts of town, becoming smaller as they near the town square. \nIn the center of town, there are many merchants selling trinkets and knickknacks, as well as shops and warehouses and workshops. \nDown a ways is the castle, where the mouse Bobouse is supposed to live, however as you have never been to Vouderlais before, you cannot confirm any of these facts. \n \n \n You are currently in the town square. What do you with to do? \n \n 1. Look around the town square \n 2. Check out the farms \n 3. Go to the castle" + note(3))
 
     //User Chose to stay in the town square
     if (choice === "1"){
@@ -54,7 +54,7 @@ function atTownSquare(){
         message+= "You are in the town square! There are so many people to meet and things to buy and friends to make and food to eat and things to look at! You are thrilled. You look around and see a few shops of note: a haberdashery and a cheese emporium and even a feather merchant! \n \n \n What do you wish to do?"
     } else {
         if (hasBeenToGhostTown === false){
-            message += "You are at the town square. You remember when you where last here it was bustling with people, all cheery and friendly. \n You don't know what happened but now it's completely empty. \n Not even the wind is blowing. You don't like this at all. \n \n \n What do you want to do?"
+            message += "You are at the town square. You remember when you were last here it was bustling with people, all cheery and friendly. \n You don't know what happened but now it's completely empty. \n Not even the wind is blowing. You don't like this at all. \n \n \n What do you want to do?"
             hasBeenToGhostTown = true
         } else {
             message+= "The town is still empty. You remember what it was like when it was lively and crowded, but not it is silent and still. \n \n \n How do you wish to procede?"
@@ -79,7 +79,7 @@ function atTownSquare(){
 
 function atHaberdashery(){
     if(hasBeenToGhostTown == true){
-        let choice = prompt("You enter the haberdashery, but theres no one here - the shop is empty. \n \n \n What do you do? \n \n 1. Head back to the town" + note(1))
+        let choice = prompt("You enter the haberdashery, but there's no one here - the shop is empty. \n \n \n What do you do? \n \n 1. Head back to the town" + note(1))
         if (choice == 1 ){
             atTownSquare()
         }
@@ -119,12 +119,12 @@ function atHaberdashery(){
 
 function atCheeseEmporium(){
     if(hasBeenToGhostTown == true){
-        let choice = prompt("You enter the cheese emporium, hopeing for a morsel or cube to snack on, but there is nothing. Only the memory of the hint of the implication of the smell of cheese, and it lingers on your nose. \n \n \n What do you do? \n \n 1. Head back to the town" + note(1))
+        let choice = prompt("You enter the cheese emporium, hoping for a morsel or cube to snack on, but there is nothing. Only the memory of the hint of the implication of the smell of cheese, and it lingers on your nose. \n \n \n What do you do? \n \n 1. Head back to the town" + note(1))
         if (choice == 1 ){
             atTownSquare()
         } else { errorMessage() }
     } else {
-        let choice = prompt("You enter the enter emporium. There is a very nice rat there named Marmalade. They greet you with a courteous smile and ask if they can help you with anything. \n  'Hello! Would you like to buy anything today?' says Marmalade. \n \n \n What do you say? \n \n 1. 'I'll have a few slices of gouda please! I love cheese so so much' \n 2. 'No thank you! I love to look at cheeese, but I am unfortunatly burdened with a cheese allergy and can not eat any \n 3. Make your excuses and head back to the town square" + note(3))
+        let choice = prompt("You enter the enter emporium. There is a very nice rat there named Marmalade. They greet you with a courteous smile and ask if they can help you with anything. \n  'Hello! Would you like to buy anything today?' says Marmalade. \n \n \n What do you say? \n \n 1. 'I'll have a few slices of gouda, please! I love cheese so so much' \n 2. 'No thank you! I love to look at cheeese, but I am unfortunately burdened with a cheese allergy and can not eat any \n 3. Make your excuses and head back to the town square" + note(3))
         if (choice === "1"){
             choice = prompt("Marmalade takes a few of your coins, and hands you your slices. you eat them immediately and remark on the loveliness of their aroma and flavor. \n \n \n What do you do next? \n \n 1. Return to the town square" + note(1))
             if (choice === "1"){
@@ -156,7 +156,7 @@ function atFeatherMerchant(){
                 atTownSquare()
             } else { errorMessage() }
         } else {
-            let choice = prompt("You arrive at the feathre merchant's stall. Neither merchant nor feather await you - it is empty. \n \n \n What do you do next? \n \n 1. Return to town square" + note(1))
+            let choice = prompt("You arrive at the feather merchant's stall. Neither merchant nor feather await you - it is empty. \n \n \n What do you do next? \n \n 1. Return to town square" + note(1))
             if (choice === "1"){
                 atTownSquare()
             } else { errorMessage() }
@@ -164,7 +164,7 @@ function atFeatherMerchant(){
     } else {
         if (hasTalkedWithFeatherMerchant === false){
             hasTalkedWithFeatherMerchant = true
-            let choice = prompt("You arrive at the feather merchant's stall. It is somewhat small, but filled with every type of feather imaginable. One specific feather catches your eye - it is gold, with flecks of ruby red. \n 'Oh, I see that feather has caught your eye', the feather merchant says. 'Unfortunatly I can't let you have that one, but I can give you this one' \n You look at the feather - it's the same color as your fur, and you could wear it on your head. \n \n \n How do you procede? \n \n 1. Take the feather and return to the town square \n 2. Leave the feather and return to the town square")
+            let choice = prompt("You arrive at the feather merchant's stall. It is somewhat small but filled with every type of feather imaginable. One specific feather catches your eye - it is gold, with flecks of ruby red. \n 'Oh, I see that feather has caught your eye', the feather merchant says. 'Unfortunately I can't let you have that one, but I can give you this one' \n You look at the feather - it's the same color as your fur, and you could wear it on your head. \n \n \n How do you proceed? \n \n 1. Take the feather and return to the town square \n 2. Leave the feather and return to the town square")
             if (choice === "1"){
                 hasFeather = true
                 atTownSquare()
@@ -186,21 +186,21 @@ function atFeatherMerchant(){
 }
 
 function headToCastle(){
-    let choice = prompt("You walk for a bit towards the castle. There is a moat you can hop over, and a suspicious looking rock \n \n \n What do you want to do? \n \n 1. Keep walking to the castle \n 2. Look at the rock " + note(2))
+    let choice = prompt("You walk for a bit towards the castle. There is a moat you can hop over, and a suspicious-looking rock \n \n \n What do you want to do? \n \n 1. Keep walking to the castle \n 2. Look at the rock " + note(2))
 
     //user keeps going to the castle
     if (choice === "1"){  
         headToCastle2()
     //user looks at the rock
     } else if (choice === "2"){
-        choice = prompt ("You pickup the rock and notice it is not a rock at all, but a pretend rock! it says 'key' on it. You think about how this must be a fake rock to store keys in. \n \n \n What do you want to do? \n \n 1. Get the key out of the rock \n 2. Put the rock back \n \n " + note(2))
+        choice = prompt ("You pick up the rock and notice it is not a rock at all, but a pretend rock! it says 'key' on it. You think about how this must be a fake rock to store keys in. \n \n \n What do you want to do? \n \n 1. Get the key out of the rock \n 2. Put the rock back \n \n " + note(2))
 
         //user gets key out of rock 
         if(choice === "1"){
             let message = "You find a latch and pry open a secret key compartment. "
             if (hasKey === false){
                 hasKey = true
-                message += "There is a key! The key is beautiful and old and adorned with lovely markings and makes you feel nice and happy. It looks to be made of gold and rubys. "
+                message += "There is a key! The key is beautiful and old and adorned with lovely markings and makes you feel nice and happy. It looks to be made of gold and rubies. "
             } else {
                 message += "But you already got the key earlier so the secret compartment is empty. "
                 if (hasUsedKey === true){
@@ -249,7 +249,7 @@ function tryToOpenDoor(){
         message = ""
         if (hasUsedKey === false){
             hasUsedKey = true;
-            message = "The door is locked. But its cheery demeanor reminds you something you felt before... Oh! You remember you have the key you found earlier. Taking it out of your pouch you realize it matches the doorknob's own decorative style. \n You place it into the keyhole and turn the key. It clicks open. \n \n \n What are you going to do now that you've unlocked the door \n \n 1. Go inside the castle \n 2. Go back to town"
+            message = "The door is locked. But its cheery demeanor reminds you of something you felt before... Oh! You remember you have the key you found earlier. Taking it out of your pouch you realize it matches the doorknob's own decorative style. \n You place it into the keyhole and turn the key. It clicks open. \n \n \n What are you going to do now that you've unlocked the door \n \n 1. Go inside the castle \n 2. Go back to town"
         } else {
             message = "The door is just as unlocked as it was after you unlocked it earlier, so you can still go in. \n \n \n What next for you? \n \n 1. Go inside the castle \n 2. Go back to town"
         }
@@ -267,7 +267,7 @@ function tryToOpenDoor(){
 function headToCastle2(){
     let message = ""
     if (hasBeenToCastleMoat == false){
-        message += "There is no water in the moat, and It looks like there is no bridge either, but you have your strong rat legs so you jump across and continue up the path. \n You arrive at the castle after walking for what seems like anything beteween 2 mintues or two hours. The castle gate is up and there is no guard to guide your, nor is there a guide to guard you. You walk through the lifted gates untill you reach a set of large cheerfully ominous oak doors. \n \n \n What course of action are you compelled to take? "
+        message += "There is no water in the moat, and It looks like there is no bridge either, but you have your strong rat legs so you jump across and continue up the path. \n You arrive at the castle after walking for what seems like anything between 2 minutes and two hours. The castle gate is up and there is no guard to guide your, nor is there a guide to guard you. You walk through the lifted gates until you reach a set of large cheerfully ominous oak doors. \n \n \n What course of action are you compelled to take? "
         hasBeenToCastleMoat = true;
     } else {
         message+= "You jump the moat like you did last time, then you walk, walk, walk and walk some more. You arrive at the castle. The gates are still up so you go the door. \n \n What are you going to do?"
@@ -306,13 +306,13 @@ function atFarms(){
 function atCastleHall(){
     if (hasBeenToCastle === false){
         hasBeenToCastle = true
-        let choice = prompt("You push the doors open. They are very heavy and old and creeky and the hinges haven't been oiled in a while. They open into the great hall. \n There are detailed tapestries depicting courtly life are hanging from the walls. It seem's almost like there is a feast happening, tables are lines up with entrees and drinks and appetizers and sweets adorning their centers. The food is still hot, but there is no one here. the throne at the head of the room is empty \n \n \n What do you do next? \n \n 1. Return to Town" + note(1))
+        let choice = prompt("You push the doors open. They are very heavy and old and creeky and the hinges haven't been oiled in a while. They open into the great hall. \n There are detailed tapestries depicting courtly life hanging from the walls. It seems almost like there is a feast happening, tables are lined up with entrees and drinks and appetizers and sweets adorning their centers. The food is still hot, but there is no one here. the throne at the head of the room is empty \n \n \n What do you do next? \n \n 1. Return to Town" + note(1))
         if (choice === "1"){ atTownSquare() }
         else { errorMessage() }
     } else {
         if (hasComeBackToCastle === false){
             hasComeBackToCastle = true
-            let choice = prompt("You go back into the castle hall. \nThe feast is still setup, but you notice that the food has cooled down by now. \nYou go to inspect the tapestries and notice that while they are depicting castle life with scenes of grand feasts, thrilling hunts, and epic battles, the scenes are empty. Like sets without any actors, displaying only where things should take place. Last time you where here, there where hunter's in the tapestry forests, and knights in the tapestry battle fields, but now there is no one. \n You walk towards the regal Bobouse's throne, only to notice that the king mouse's royal robes and crown are in a pile - as if someone like someone had been wearing them before dissapearing into thin air. \n \n \n How are you going to continue? \n \n 1. Return to town" + note(1))
+            let choice = prompt("You go back into the castle hall. \nThe feast is still set up, but you notice that the food has cooled down by now. \nYou go to inspect the tapestries and notice that while they are depicting castle life with scenes of grand feasts, thrilling hunts, and epic battles, the scenes are empty. Like sets without any actors, displaying only where things should take place. Last time you were here, there were hunters in the tapestry forests, and knights in the tapestry battlefields, but now there is no one. \n You walk towards the regal Bobouse's throne, only to notice that the king mouse's royal robes and crown are in a pile - as if someone like someone had been wearing them before disapearing into thin air. \n \n \n How are you going to continue? \n \n 1. Return to town" + note(1))
             if (choice === "1") { atTownSquare() }
             else { errorMessage() }
         } else {
