@@ -1,0 +1,60 @@
+#ratbox{
+    width: 321px;
+    height: 259px;
+    outline: 10px solid goldenrod; 
+    margin: auto;
+    border-radius: 15px;
+    margin-top: 5%;
+}
+
+#mad{
+    outline: 10px solid rgb(139, 0, 0); 
+}
+.sad{
+    background-image: url("images/sad.png");
+}
+
+.sleepy{
+    background-image: url("images/sleepy.png");
+}
+
+.happy{
+    background-image: url("images/happy.png");
+
+}
+
+.neutral{
+    background-image: url("images/neutral.png");
+}
+
+.button {
+
+    grid-row: 2/3;
+    text-align: center;
+    margin: auto;
+}
+
+button{
+    color: goldenrod;
+    background-color: gold;
+    border-radius: 10px;
+    padding: 10px;
+    text-shadow: 1px 1px 1px #ff7b00;
+    text-shadow: 1px 1px 1px #ffffff;
+}
+
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /* width: 50%; */
+}
+
+.container{
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.row{
+    margin-top: 70px;
+}
