@@ -30,29 +30,29 @@ let numberOfSmiles = 0
 
 sadbutton.addEventListener("click", e => {
     console.log("sad button clicked!")
-    imagediv.innerHTML = `<img src="images/sad.png" />`
+    imagediv.innerHTML = `<img src="Images/sad.png" />`
     numberOfStories+=1
     refreshText()
 })
 happybutton.addEventListener("click", e => {
     console.log("happy button clicked!")
-    imagediv.innerHTML = `<img src="images/happy.png" />`
+    imagediv.innerHTML = `<img src="Images/happy.png" />`
     numberOfSmiles += 1
     refreshText()
 })
 neutralbutton.addEventListener("click", e => {
     console.log("neutral button clicked!")
-    imagediv.innerHTML = `<img src="images/neutral.png" />`
+    imagediv.innerHTML = `<img src="Images/neutral.png" />`
 })
 sleepybutton.addEventListener("click", e => {
     console.log("sleepy button clicked!")
-    imagediv.innerHTML = `<img src="images/sleeping.png" />`
+    imagediv.innerHTML = `<img src="Images/sleeping.png" />`
     numberOfNaps +=1
     refreshText()
 })
 takecheesebutton.addEventListener("click",e => {
     console.log("you took their cheese!! >:(")
-    imagediv.innerHTML = `<img src="images/mad.png" />`
+    imagediv.innerHTML = `<img src="Images/mad.png" />`
     if(amountOfCheese == 2 ){
         cheese0.innerHTML=``
         amountOfCheese = 1
