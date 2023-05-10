@@ -16,6 +16,7 @@ button{
     font-family: Haversham;
     padding: 10px;
     font-size: 20px;
+    text-shadow: -1px -1px 0 #cc8d8d, 1px -1px 0 #cc8d8d, -1px 1px 0 #cc8d8d, 1px 1px 0 #cc8d8d;
 
 }
 
