@@ -35,6 +35,6 @@ h2{
     padding-top: 25px;
     text-align: center;
     font-family: Haversham;
-    text-shadow: -1px -1px 0 #FFF, 1px -1px 0 #FFF, -1px 1px 0 #FFF, 1px 1px 0 #FFF;
-
+/*     text-shadow: -1px -1px 0 #FFF, 1px -1px 0 #FFF, -1px 1px 0 #FFF, 1px 1px 0 #FFF; */
+    text-shadow: -2px -2px 0 #E8C6C6, 2px -2px 0 #FFF, -2px 2px 0 #C2FDDC, 2px 2px 0 #FFF;
 }
